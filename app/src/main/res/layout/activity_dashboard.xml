@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emerald_soft"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo, Kasir!"
+                android:textColor="@color/emerald_dark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semoga harimu menyenangkan"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_popup_reminder"
+            app:tint="@color/emerald_dark" />
+    </RelativeLayout>
+
+    <!-- Grid Menu (Menggunakan LinearLayout & Weight untuk kesederhanaan) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Tombol Transaksi -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTransaksi"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    app:tint="@color/emerald_primary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Transaksi"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tombol Obat -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardObat"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_menu_manage"
+                    app:tint="@color/emerald_primary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Stok Obat"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Tombol History -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHistory"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_menu_recent_history"
+                    app:tint="@color/emerald_primary" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Riwayat"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tombol Logout -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_lock_power_off"
+                    app:tint="#E74C3C" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Keluar"
+                    android:textColor="#E74C3C"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

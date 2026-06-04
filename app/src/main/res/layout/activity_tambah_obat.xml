@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emerald_soft"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tambah Obat Baru"
+        android:textColor="@color/emerald_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan informasi obat dengan lengkap"
+        android:textColor="@color/text_gray"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:id="@+id/etNamaObatBaru"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Nama Obat"
+        android:paddingHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/etJenisObatBaru"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Jenis (Tablet/Sirup/Kapsul)"
+        android:paddingHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/etStokObatBaru"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Jumlah Stok"
+        android:inputType="number"
+        android:paddingHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/etHargaObatBaru"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Harga (Misal: 5000)"
+        android:inputType="number"
+        android:paddingHorizontal="16dp" />
+
+    <Button
+        android:id="@+id/btnSimpanObat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/emerald_primary"
+        android:text="Simpan Data Obat"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+</LinearLayout>

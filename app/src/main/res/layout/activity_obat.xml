@@ -1,55 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EAF5EE"
+    android:background="@color/emerald_soft"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="💊 PharmaTic"
-        android:textColor="#27AE60"
-        android:textSize="32sp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Kelola transaksi obat dengan mudah"
-        android:textColor="#666666"
-        android:textSize="16sp"/>
-
-    <EditText
-        android:id="@+id/etCari"
+    <!-- Header Section (Disamakan dengan gaya Dashboard) -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginBottom="12dp"
-        android:background="#FFFFFF"
-        android:hint="🔍 Cari Obat..."
-        android:padding="12dp"
-        android:textColor="#000000"
-        android:textColorHint="#888888"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stok Obat"
+            android:textColor="@color/emerald_dark"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data obat tersedia di apotek"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- List Obat -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvObat"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-    <Button
-        android:id="@+id/btnKeranjang"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#2ECC71"
-        android:text="🛒 Lihat Keranjang"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
 
 </LinearLayout>
